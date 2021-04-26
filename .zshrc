@@ -77,7 +77,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm adb)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm adb )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,6 +89,7 @@ source $ZSH/oh-my-zsh.sh
  export PATH="$PATH:/usr/share/java"
  export PATH="$PATH:/snap/bin/flutter/bin"
  export PATH="$PATH:/home/sriram/Android/Sdk/platform-tools/adb"
+ export PATH="$PATH:/home/sriram/snap/flutter/common/flutter/.pub-cache/bin" 
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
