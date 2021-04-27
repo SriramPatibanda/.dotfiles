@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sriram/.oh-my-zsh"
@@ -77,7 +77,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm adb )
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,9 +88,16 @@ source $ZSH/oh-my-zsh.sh
  #You may need to manually set your language environment
  export PATH="$PATH:/usr/share/java"
  export PATH="$PATH:/snap/bin/flutter/bin"
- export PATH="$PATH:/home/sriram/Android/Sdk/platform-tools/adb"
+ 
  export PATH="$PATH:/home/sriram/snap/flutter/common/flutter/.pub-cache/bin" 
+
+
+
+ export ANDROID_HOME="$HOME/Android/Sdk"
+ export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+ export PATH="$HOME/.bin:$PATH"
 # export LANG=en_US.UTF-8
+
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -109,7 +116,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
-
+alias projects="cd ~/Documents/Projects"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
 alias phoneIp="adb shell ip -f inet addr show wlan0"
 alias reclamation="cd ~/Documents/Projects/MM/project-reclamation/server"
@@ -117,4 +124,5 @@ alias reclamation="cd ~/Documents/Projects/MM/project-reclamation/server"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH=~/Android/sdk/platform-tools:/home/sriram/.nvm/versions/node/v14.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin/flutter/bin:/home/sriram/.fzf/bin:/snap/bin/flutter/bin:/home/sriram/Android/Sdk/platform-tools/adb:/snap/bin/flutter/bin:/home/sriram/Android/Sdk/platform-tools/adb
+
+export PATH="$PATH:$HOME/.rvm/bin"

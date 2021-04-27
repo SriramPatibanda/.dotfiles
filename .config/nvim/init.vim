@@ -3,6 +3,7 @@ call plug#begin("~/.vim/plugged")
   " color
   Plug 'morhetz/gruvbox'
   Plug 'jremmen/vim-ripgrep'
+  Plug 'mlaursen/vim-react-snippets'
   Plug 'vim-airline/vim-airline'
   Plug 'tpope/vim-fugitive'
   Plug 'APZelos/blamer.nvim'
