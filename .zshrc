@@ -120,6 +120,7 @@ alias projects="cd ~/Documents/Projects"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
 alias phoneIp="adb shell ip -f inet addr show wlan0"
 alias reclamation="cd ~/Documents/Projects/MM/project-reclamation/server"
+alias dotfiles="cd .dotfiles"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

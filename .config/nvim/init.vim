@@ -12,6 +12,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'dart-lang/dart-vim-plugin'
   Plug 'lyuts/vim-rtags'
   Plug 'https://github.com/kien/ctrlp.vim.git'
   Plug 'jiangmiao/auto-pairs'
@@ -83,4 +84,7 @@ let g:fzf_action = {
   \}
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
+nmap <leader> gy <Plug>(coc-type-definition)
+nmap <leader> gi <Plug>(coc-implementation)
+
 nnoremap <C-> :GFiles<CR>
