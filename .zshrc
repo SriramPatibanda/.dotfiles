@@ -88,11 +88,7 @@ source $ZSH/oh-my-zsh.sh
  #You may need to manually set your language environment
  export PATH="$PATH:/usr/share/java"
  export PATH="$PATH:/snap/bin/flutter/bin"
- 
  export PATH="$PATH:/home/sriram/snap/flutter/common/flutter/.pub-cache/bin" 
-
-
-
  export ANDROID_HOME="$HOME/Android/Sdk"
  export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
  export PATH="$HOME/.bin:$PATH"
@@ -106,21 +102,14 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias projects="cd ~/Documents/Projects"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
 alias phoneIp="adb shell ip -f inet addr show wlan0"
 alias reclamation="cd ~/Documents/Projects/MM/project-reclamation/server"
 alias dotfiles="cd .dotfiles"
+alias gs="git status"
+alias gd="git diff"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
