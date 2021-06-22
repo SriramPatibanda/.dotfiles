@@ -52,8 +52,8 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
-# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
+# Caution: this setting can cause s with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/s/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -92,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
  export ANDROID_HOME="$HOME/Android/Sdk"
  export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
  export PATH="$HOME/.bin:$PATH"
+ export PATH="$HOME/.local/bin:$PATH"
 # export LANG=en_US.UTF-8
 
 
