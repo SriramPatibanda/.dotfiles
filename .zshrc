@@ -89,6 +89,7 @@ source $ZSH/oh-my-zsh.sh
  export PATH="$PATH:/usr/share/java"
  export PATH="$PATH:/snap/bin/flutter/bin"
  export PATH="$PATH:/home/sriram/snap/flutter/common/flutter/.pub-cache/bin" 
+ export PATH="$PATH:/snap/bin/dart"
  export ANDROID_HOME="$HOME/Android/Sdk"
  export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
  export PATH="$HOME/.bin:$PATH"
