@@ -113,7 +113,8 @@ alias dotfiles="cd .dotfiles"
 alias gs="git status"
 alias gd="git diff"
 alias fpg="flutter pub get"
-alias fbr="flutter build apk --release"
+alias fbapk="flutter build apk --release"
+alias fbr="flutter pub run build_runner watch --delete-conflicting-outputs"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
